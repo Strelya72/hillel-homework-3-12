@@ -6,7 +6,7 @@ public class Lesson8 {
     public static void main(String[] args) {
 
         // Task 2
-        List<Contact> listContacts = new ArrayList<Contact>();
+        List<Contact> listContacts = new ArrayList<>();
         listContacts.add(new Contact("+380997186857", "Danil", "Strelchenya"));
         listContacts.add(new Contact("+380508090156", "Diana", "Yesman"));
         listContacts.add(newContact());
@@ -14,13 +14,13 @@ public class Lesson8 {
         listContacts.add(newContact());
 
         // Task 2
-        List<CallLog> listCallLogs = new ArrayList<CallLog>();
+        List<CallLog> listCallLogs = new ArrayList<>();
         listCallLogs.add(new CallLog("+380997186857", "+380508090156", 90, System.currentTimeMillis()));
         listCallLogs.add(new CallLog("+380999621425", "+380997186857", 35, System.currentTimeMillis()));
         listCallLogs.add(new CallLog("+380508090156", "+380506672153", 35, System.currentTimeMillis()));
 
         // Task 2
-        List<Message> listMessages = new ArrayList<Message>();
+        List<Message> listMessages = new ArrayList<>();
         listMessages.add(new Message("+380997186857", "+380508090156", "Hi, how are you?", System.currentTimeMillis()));
         listMessages.add(new Message("+380997186857", "+380999621425", "Ok, in 5 minutes.", System.currentTimeMillis()));
 
@@ -44,14 +44,6 @@ public class Lesson8 {
                 System.out.println();
             }
         }
-
-//        Map<Contact, Collection<CallLog>> mapContactCalllogs2 = new HashMap<Contact, Collection<CallLog>>();
-//        mapContactCalllogs2.put(listContacts.get(0),listCallLogs);
-//        mapContactCalllogs2.put(listContacts.get(1),listCallLogs);
-//        for (Contact key : mapContactCalllogs2.keySet()) {
-//            System.out.println("CallLog For: " + key.getNumber());
-//            System.out.println();
-//        }
 
         // Task 5
         for (Contact key : mapContactCalllogs.keySet()) {
